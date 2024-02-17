@@ -154,10 +154,10 @@ export default function CreatePost() {
             setFormData({ ...formData, content: value });
           }}
         />
-        <Button type="submit" gradientDuoTone="cyanToBlue">
+        <Button type="submit" gradientDuoTone="purpleToBlue">
           Publish
         </Button>
-        
+       
         {publishError && (
           <Alert className="mt-5" color="failure">
             {publishError}
