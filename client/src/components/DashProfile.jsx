@@ -30,6 +30,7 @@ export default function DashProfile() {
     if (imageFile) {
       uploadImage();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [imageFile]);
 
   const uploadImage = async () => {
@@ -57,6 +58,7 @@ export default function DashProfile() {
 
         setImageFileUploadProgress(progress.toFixed(0));
       },
+      // eslint-disable-next-line no-unused-vars
       (error) => {
         setImageFileUploadError(
           "Could not upload image (File must be less than 2MB)"
